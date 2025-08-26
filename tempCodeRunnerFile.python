@@ -1,0 +1,13 @@
+def print_triangle_star_pattern(n):
+    # Loop through the number of rows
+    for i in range(1, n + 1):
+        # Calculate spaces and stars for the current row
+        spaces = n - i  # Spaces decrease with each row
+        stars = 2 * i - 1  # Stars increase by 2 for each row
+        
+        # Print the current row: spaces followed by stars
+        print(" " * spaces + "*" * stars)
+
+# Example Usage
+n = 5
+print_triangle_star_pattern(n)
